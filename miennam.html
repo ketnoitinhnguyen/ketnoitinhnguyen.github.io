@@ -14,8 +14,7 @@ session_start();
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!--Add this-->
     <link rel="stylesheet" href="./css/style_nam.css" />   <!--Add this-->
-   <link rel="stylesheet" href="./css/signUp.css">
-      <link rel="icon" href="./img/officialLogo.png" />
+    <link rel="stylesheet" href="./css/signUp.css">
     <link rel="stylesheet" href="./css/loginform.css"> <title>Kết nối tình nguyện</title>
 </head>
 
@@ -40,10 +39,10 @@ session_start();
                         <a href="#" class="main">Địa phương khó khăn</a>
                     </li>
                     <li>
-                        <a href="#" id = "sign" class="main">Đăng ký</a>
+                        <a href="#" button id = "myBtn" class="main">Đăng ký</a>
                     </li>
                     <li>
-                        <a href="#" id = "login" class="main">Đăng nhập</a>
+                        <a href="#" button id = "#" class="main">Đăng nhập</a>
                     </li>
                 </ul>
             </nav>
@@ -62,278 +61,217 @@ session_start();
                 </h3>
             </div>
 </header>
-    <section class = "section">
+<script src="js/openForm.js"></script>
+    <div id='myModal' class='modal'>
+        <!-- Modal content -->
+        <div class='container'>
+            <span class='close'>&times;</span>
+            <div class="title">
+                <strong> ĐĂNG KÝ TÌNH NGUYỆN VIÊN</strong>
+            </div>
+            <div class="form">
+                <div class="input">
+                    <label for="">Họ và tên</label>
+                    <input type="text" placeholder="Họ và tên" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Giới tính</label>
+                    <select name="" id="" class="select">
+                    <option value="Option">Chọn</option>
+                    <option value="Male">Nam</option>
+                    <option value="Female">Nữ</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="">Năm sinh</label>
+                    <input type="text" placeholder="Năm sinh" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Trường đang học</label>
+                    <input type="text" placeholder="Tên trường" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Mã số sinh viên</label>
+                    <input type="text" placeholder="Mã số sinh viên" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Số điện thoại</label>
+                    <input type="text" placeholder="Số điện thoại" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Địa chỉ</label>
+                    <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Địa chỉ"
+                    class="box"
+                    ></textarea>
+                </div>
+                <div class="input">
+            <label for="">Khu vực đăng ký</label>
+            <select name="" id="" class="select">
+            <option value="Option">Chọn</option>
+            <option value="North">Miền Bắc</option>
+            <option value="Central">Miền Trung</option>
+            <option value="South">Miền Nam</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="">Chương trình đăng ký</label>
+            <select name="" id="" class="select">
+            <option value="Option">Chọn</option>
+            <option value="1">Chia sẻ cùng thầy cô</option>
+            <option value="2">Tôi yêu Tổ quốc tôi</option>
+            <option value="3">Vì bạn đến trường</option>
+            <option value="4">Ngày hội người bạn nhỏ</option>
+            <option value="5">Hoa nhân ái</option>
+            <option value="6">Ngày hội người bạn nhỏ</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="">Email đăng ký</label>
+            <input type="email" placeholder="Email" class="box" />
+        </div>
+        <div class="input">
+            <label for="">Mật khẩu</label>
+            <input
+            type="password"
+            placeholder="Password"
+            class="box"
+            class="pass"
+            />
+        </div>
+        <div class="input">
+            <label for="">Nhập lại mật khẩu</label>
+            <input
+            type="password"
+            placeholder="Password"
+            class="box"
+            class="pass"
+            />
+        </div>
+        <div class="input">
+            <input type="submit" value="ĐĂNG KÝ" class="button" />
+        </div>
+            </div>
+        </div>
+    </div>
 
-    </section>
+    <div id='myModal2' class='modal'>
+
+        <!-- Modal content -->
+        <div class='modal-content'>
+            <div class="container2">
+                <div class="title">
+                    <strong>ĐĂNG NHẬP</strong>
+                  </div>
+            </div>
+    </div>
+
+<script src='js/popup.js'></script>
+
+
+
+  
+  </div>
 
 </body>
 
-
-<content class="content">
-    <section class="news-cards">
-        <div class="row">
-            <div class="column">
-                <div class="custom-select" style="width:400px;">
-                    <select>
-                        <option value="0">Chọn tỉnh/thành: </option>
-                        <option value="1">Thành phố Hồ Chí Minh</option>
-                        <option value="2">Bình Dương</option>
-                        <option value="3">Bình Phước</option>
-                        <option value="4">Bà Rịa - Vũng Tàu</option>
-                        <option value="5">Điện Biên</option>
-                        <option value="6">Đồng Nai</option>
-                        <option value="7">Tây Ninh</option>
-                        <option value="8">An Giang</option>
-                        <option value="9">Bạc Liêu</option>
-                        <option value="10">Bến Tre</option>
-                        <option value="11">Cà Mau</option>
-                        <option value="12">Cần Thơ</option>
-                        <option value="13">Đồng Tháp</option>
-                        <option value="14">Hậu Giang</option>
-                        <option value="15">Kiên Giang</option>
-                        <option value="16">Long An</option>
-                        <option value="17">Sóc Trăng</option>
-                        <option value="18">Tiền Giang</option>
-                        <option value="19">Trà Vinh</option>
-                        <option value="20">Vĩnh Long</option>
-                        <option value="21">Lâm Đồng</option>
-                        <option value="22">Ninh Thuận</option>
-                        <option value="23">Bình Thuận</option>
-                    </select>
+    <content class="content">
+        <section class="news-cards">
+            <div class="row">
+                <div class="column">
+                    <div class="custom-select" style="width:400px;">
+                        <select>
+                            <option value="0">Chọn tỉnh/thành: </option>
+                            <option value="1">Thành phố Hồ Chí Minh</option>
+                            <option value="2">Bình Dương</option>
+                            <option value="3">Bình Phước</option>
+                            <option value="4">Bà Rịa - Vũng Tàu</option>
+                            <option value="5">Điện Biên</option>
+                            <option value="6">Đồng Nai</option>
+                            <option value="7">Tây Ninh</option>
+                            <option value="8">An Giang</option>
+                            <option value="9">Bạc Liêu</option>
+                            <option value="10">Bến Tre</option>
+                            <option value="11">Cà Mau</option>
+                            <option value="12">Cần Thơ</option>
+                            <option value="13">Đồng Tháp</option>
+                            <option value="14">Hậu Giang</option>
+                            <option value="15">Kiên Giang</option>
+                            <option value="16">Long An</option>
+                            <option value="17">Sóc Trăng</option>
+                            <option value="18">Tiền Giang</option>
+                            <option value="19">Trà Vinh</option>
+                            <option value="20">Vĩnh Long</option>
+                            <option value="21">Lâm Đồng</option>
+                            <option value="22">Ninh Thuận</option>
+                            <option value="23">Bình Thuận</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="custom-select" style="width:400px;">
-                    <select>
-                        <option value="0">Thời gian thực hiện:</option>
-                        <option value="1">Tháng 1</option>
-                        <option value="2">Tháng 2</option>
-                        <option value="3">Tháng 3</option>
-                        <option value="4">Tháng 4</option>
-                        <option value="5">Tháng 5</option>
-                        <option value="6">Tháng 6</option>
-                        <option value="7">Tháng 7</option>
-                        <option value="8">Tháng 8</option>
-                        <option value="9">Tháng 9</option>
-                        <option value="10">Tháng 10</option>
-                        <option value="11">Tháng 11</option>
-                        <option value="12">Tháng 12</option>
-                    </select>
+                <div class="column">
+                    <div class="custom-select" style="width:400px;">
+                        <select>
+                            <option value="0">Thời gian thực hiện:</option>
+                            <option value="1">Tháng 1</option>
+                            <option value="2">Tháng 2</option>
+                            <option value="3">Tháng 3</option>
+                            <option value="4">Tháng 4</option>
+                            <option value="5">Tháng 5</option>
+                            <option value="6">Tháng 6</option>
+                            <option value="7">Tháng 7</option>
+                            <option value="8">Tháng 8</option>
+                            <option value="9">Tháng 9</option>
+                            <option value="10">Tháng 10</option>
+                            <option value="11">Tháng 11</option>
+                            <option value="12">Tháng 12</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="custom-select" style="width:400px;">
-                    <select>
-                        <option value="0">Đơn vị tổ chức:</option>
-                        <option value="1">ĐH Kinh tế - Luật (ĐHQG TP.HCM)</option>
-                        <option value="2">ĐH Bách khoa (ĐHQG TP.HCM)</option>
-                        <option value="3">ĐH Công nghệ thông tin (ĐHQG TP.HCM)</option>
-                        <option value="4">ĐH Quốc tế (ĐHQG TP.HCM)</option>
-                        <option value="5">ĐH Khoa học Xã hội & Nhân văn (DDHQG TP.HCM)</option>
-                        <option value="6">Khoa Y ĐHQG TP.HCM</option>
-                    </select>
+                <div class="column">
+                    <div class="custom-select" style="width:400px;">
+                        <select>
+                            <option value="0">Đơn vị tổ chức:</option>
+                            <option value="1">ĐH Kinh tế - Luật (ĐHQG TP.HCM)</option>
+                            <option value="2">ĐH Bách khoa (ĐHQG TP.HCM)</option>
+                            <option value="3">ĐH Công nghệ thông tin (ĐHQG TP.HCM)</option>
+                            <option value="4">ĐH Quốc tế (ĐHQG TP.HCM)</option>
+                            <option value="5">ĐH Khoa học Xã hội & Nhân văn (DDHQG TP.HCM)</option>
+                            <option value="6">Khoa Y ĐHQG TP.HCM</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-          </div> 
-                     <div class="container">
-        <div class="close">+
-     <script src="js/openForm.js"></script> 
-     </div> 
-        <div class="title">
-          <strong> ĐĂNG KÝ TÌNH NGUYỆN VIÊN</strong>
-        </div>
-        <div class="form">
-          <div class="input">
-            <label for="">Họ và tên</label>
-            <input type="text" placeholder="Họ và tên" class="box" />
-          </div>
-          <div class="input">
-            <label for="">Giới tính</label>
-            <select name="" id="" class="select">
-              <option value="Option">Chọn</option>
-              <option value="Male">Nam</option>
-              <option value="Female">Nữ</option>
-            </select>
-          </div>
-          <div class="input">
-            <label for="">Năm sinh</label>
-            <input type="text" placeholder="Năm sinh" class="box" />
-          </div>
-          <div class="input">
-            <label for="">Trường đang học</label>
-            <input type="text" placeholder="Tên trường" class="box" />
-          </div>
-          <div class="input">
-            <label for="">Mã số sinh viên</label>
-            <input type="text" placeholder="Mã số sinh viên" class="box" />
-          </div>
-          <div class="input">
-            <label for="">Số điện thoại</label>
-            <input type="text" placeholder="Số điện thoại" class="box" />
-          </div>
-          <div class="input">
-            <label for="">Địa chỉ</label>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Địa chỉ"
-              class="box"
-            ></textarea>
-          </div>
-          <div class="input">
-            <label for="">Khu vực đăng ký</label>
-            <select name="" id="" class="select">
-              <option value="Option">Chọn</option>
-              <option value="North">Miền Bắc</option>
-              <option value="Central">Miền Trung</option>
-              <option value="South">Miền Nam</option>
-            </select>
-          </div>
-          <div class="input">
-            <label for="">Chương trình đăng ký</label>
-            <select name="" id="" class="select">
-              <option value="Option">Chọn</option>
-              <option value="1">Chia sẻ cùng thầy cô</option>
-              <option value="2">Tôi yêu Tổ quốc tôi</option>
-              <option value="3">Vì bạn đến trường</option>
-              <option value="4">Ngày hội người bạn nhỏ</option>
-              <option value="5">Hoa nhân ái</option>
-              <option value="6">Ngày hội người bạn nhỏ</option>
-            </select>
-          </div>
-          <div class="input">
-            <label for="">Email đăng ký</label>
-            <input type="email" placeholder="Email" class="box" />
-          </div>
-          <div class="input">
-            <label for="">Mật khẩu</label>
-            <input
-              type="password"
-              placeholder="Password"
-              class="box"
-              class="pass"
-            />
-          </div>
-          <div class="input">
-            <label for="">Nhập lại mật khẩu</label>
-            <input
-              type="password"
-              placeholder="Password"
-              class="box"
-              class="pass"
-            />
-          </div>
-          <div class="input">
-            <input type="submit" value="ĐĂNG KÝ" class="button" />
-          </div>
-        </div>
-    </div>
-     <div class="container2">
-        <div class="off">+
-        <script src="js/openForm.js"></script>
-        </div>
-        <div class="title">
-          <strong>ĐĂNG NHẬP</strong>
-        </div>
-        <div class="form">
-          <div class="input">
-            <label for="">Email</label>
-            <input type="email" placeholder="Email" class="box" />
-          </div>
-          <div class="input">
-            <label for="">Mật khẩu</label>
-            <input type="email" placeholder="Password" class="box" />
-          </div>
-           <div class="input">
-            <input type="submit" value="ĐĂNG NHẬP" class="button" />
-          </div>
-        </div>
-      </div>
-        <script src="./js/selecttag.js"></script>
-        <script src="./js/dropdown_.js"></script>
-    </section>
-    <section class="news-cards">
-
-        <h1 class="title">Hoạt động đang diễn ra:</h1>
-    <div class = "border-new">
-        <div class="wrapper">
-        <div class="card">
-            <img class="resize" src="./img/hoanhanai.png" alt=""> 
-            <div class="tooltip"><h4>Chương trình “Hoa Nhân Ái”</h2>
-                <span class="tooltiptext">
-                    <p>Địa điểm: thành phố Hà Nội</p>
-                    <p>Thời gian: 24/05 – 27/05</p>
-                    <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
-                    <p>Mục đích: quyên góp sách vở, trang thiết bị học tập cho 
-                        các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
-                </span>
             </div> 
+        <div class="container2">
+            <div class="off">
+            
+            </div>
+            <div class="title">
+            <strong>ĐĂNG NHẬP</strong>
+            </div>
+            <div class="form">
+            <div class="input">
+                <label for="">Email</label>
+                <input type="email" placeholder="Email" class="box" />
+            </div>
+            <div class="input">
+                <label for="">Mật khẩu</label>
+                <input type="email" placeholder="Password" class="box" />
+            </div>
+            <div class="input">
+                <input type="submit" value="ĐĂNG NHẬP" class="button" />
+            </div>
+            </div>
         </div>
-        <div class="card">
-            <img class="resize" src="./img/vibandentruong.png" alt="" />
-                <div class="tooltip"><h4>Chương trình “Vì bạn đến trường”</h2>
-                    <span class="tooltiptext">
-                        <p>Địa điểm: Tp. Hà Nội</p>
-                        <p>Thời gian: 24/05 – 27/05 </p>
-                        <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
-                        <p>Mục đích: quyên góp sách vở, trang thiết bị học
-                             tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
-                    </span>
-                </div> 
-        </div>
-        <div class="card">
-            <img class="resize" src="./img/ngayhoibannho.png" alt="" />
-                <div class="tooltip"><h4>Chương trình “Ngày hội người bạn nhỏ”</h2>
-                    <span class="tooltiptext">
-                        <p>Địa điểm: Tp. Hải Phòng</p>
-                        <p>Thời gian: 01/06 – 15/06</p>
-                        <p>Đơn vị tổ chức: Đoàn khoa tàu thủy ĐH Hàng Hải</p>
-                        <p>Mục đích: xây dựng khu vui chơi cho các trẻ em thuộc địa bàn Quận Lê Chân, thành phố Hải Phòng.</p>
-                    </span>
-                </div> 
-        </div>
-        <div class="card">
-            <img class="resize" src="./img/toiyeutoquoctoi.png" alt="" />
-                <div class="tooltip"><h4>Hành trình “Tôi yêu Tổ quốc tôi”</h2>
-                    <span class="tooltiptext">
-                        <p>Địa điểm: tỉnh Hà Giang</p>
-                        <p>Thời gian: 24/05 – 27/05 </p>
-                        <p>Đơn vị tổ chức: tỉnh Đoàn Hà Giang</p>
-                        <p>Mục đích: tổ chức những hoạt động chia sẻ với đồng bào tại các địa bàn khó khăn, để hội viên, 
-                            thanh niên chia sẻ những câu chuyện đẹp của thanh niên Việt Nam.</p>
-                    </span>
-                </div> 
-        </div>
-        <div class="card">
-            <img class="resize" src="./img/chiasecungthayco.png" alt="" />
-                <div class="tooltip"><h4>Chương trình “Chia sẻ cùng thầy cô” </h2>
-                    <span class="tooltiptext">
-                        <p>Địa điểm: Tp. Hà Nội</p>
-                        <p>Thời gian: 24/05 – 27/05 </p>
-                        <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
-                        <p>Mục đích: quyên góp sách vở, trang thiết bị học
-                             tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
-                    </span>
-                </div> 
-        </div>
-        <div class="card">
-            <img class="resize" src="./img/haylamsachbien.png" alt="" />
-                <div class="tooltip"><h4>Chiến dịch “Hãy làm sạch biển” </h2>
-                    <span class="tooltiptext">
-                        <p>Địa điểm: Tp. Hà Nội</p>
-                        <p>Thời gian: 24/05 – 27/05 </p>
-                        <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
-                        <p>Mục đích: quyên góp sách vở, trang thiết bị học
-                             tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
-                    </span>
-                </div> 
-        </div>
-    </div>
-    </section>
-    <section class="news-cards">
-        <h1 class="title">Hoạt động sắp diễn ra:</h1>
+            <script src="./js/selecttag.js"></script>
+            <script src="./js/dropdown_.js"></script>
+        </section>
+        <section class="news-cards">
+
+            <h1 class="title">Hoạt động đang diễn ra:</h1>
         <div class = "border-new">
             <div class="wrapper">
             <div class="card">
@@ -350,13 +288,13 @@ session_start();
             </div>
             <div class="card">
                 <img class="resize" src="./img/vibandentruong.png" alt="" />
-                    <div class="tooltip"><h4>Chương trình“Vì bạn đến trường”</h2>
+                    <div class="tooltip"><h4>Chương trình “Vì bạn đến trường”</h2>
                         <span class="tooltiptext">
                             <p>Địa điểm: Tp. Hà Nội</p>
                             <p>Thời gian: 24/05 – 27/05 </p>
                             <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
                             <p>Mục đích: quyên góp sách vở, trang thiết bị học
-                                 tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                                tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
                         </span>
                     </div> 
             </div>
@@ -371,9 +309,87 @@ session_start();
                         </span>
                     </div> 
             </div>
+            <div class="card">
+                <img class="resize" src="./img/toiyeutoquoctoi.png" alt="" />
+                    <div class="tooltip"><h4>Hành trình “Tôi yêu Tổ quốc tôi”</h2>
+                        <span class="tooltiptext">
+                            <p>Địa điểm: tỉnh Hà Giang</p>
+                            <p>Thời gian: 24/05 – 27/05 </p>
+                            <p>Đơn vị tổ chức: tỉnh Đoàn Hà Giang</p>
+                            <p>Mục đích: tổ chức những hoạt động chia sẻ với đồng bào tại các địa bàn khó khăn, để hội viên, 
+                                thanh niên chia sẻ những câu chuyện đẹp của thanh niên Việt Nam.</p>
+                        </span>
+                    </div> 
+            </div>
+            <div class="card">
+                <img class="resize" src="./img/chiasecungthayco.png" alt="" />
+                    <div class="tooltip"><h4>Chương trình “Chia sẻ cùng thầy cô” </h2>
+                        <span class="tooltiptext">
+                            <p>Địa điểm: Tp. Hà Nội</p>
+                            <p>Thời gian: 24/05 – 27/05 </p>
+                            <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                            <p>Mục đích: quyên góp sách vở, trang thiết bị học
+                                tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                        </span>
+                    </div> 
+            </div>
+            <div class="card">
+                <img class="resize" src="./img/haylamsachbien.png" alt="" />
+                    <div class="tooltip"><h4>Chiến dịch “Hãy làm sạch biển” </h2>
+                        <span class="tooltiptext">
+                            <p>Địa điểm: Tp. Hà Nội</p>
+                            <p>Thời gian: 24/05 – 27/05 </p>
+                            <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                            <p>Mục đích: quyên góp sách vở, trang thiết bị học
+                                tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                        </span>
+                    </div> 
+            </div>
         </div>
-        <?php include ('newdocuments.php'); ?>
-    </section>
-</content>
+        </section>
+        <section class="news-cards">
+            <h1 class="title">Hoạt động sắp diễn ra:</h1>
+            <div class = "border-new">
+                <div class="wrapper">
+                <div class="card">
+                    <img class="resize" src="./img/hoanhanai.png" alt=""> 
+                    <div class="tooltip"><h4>Chương trình “Hoa Nhân Ái”</h2>
+                        <span class="tooltiptext">
+                            <p>Địa điểm: thành phố Hà Nội</p>
+                            <p>Thời gian: 24/05 – 27/05</p>
+                            <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                            <p>Mục đích: quyên góp sách vở, trang thiết bị học tập cho 
+                                các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                        </span>
+                    </div> 
+                </div>
+                <div class="card">
+                    <img class="resize" src="./img/vibandentruong.png" alt="" />
+                        <div class="tooltip"><h4>Chương trình“Vì bạn đến trường”</h2>
+                            <span class="tooltiptext">
+                                <p>Địa điểm: Tp. Hà Nội</p>
+                                <p>Thời gian: 24/05 – 27/05 </p>
+                                <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                                <p>Mục đích: quyên góp sách vở, trang thiết bị học
+                                    tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                            </span>
+                        </div> 
+                </div>
+                <div class="card">
+                    <img class="resize" src="./img/ngayhoibannho.png" alt="" />
+                        <div class="tooltip"><h4>Chương trình “Ngày hội người bạn nhỏ”</h2>
+                            <span class="tooltiptext">
+                                <p>Địa điểm: Tp. Hải Phòng</p>
+                                <p>Thời gian: 01/06 – 15/06</p>
+                                <p>Đơn vị tổ chức: Đoàn khoa tàu thủy ĐH Hàng Hải</p>
+                                <p>Mục đích: xây dựng khu vui chơi cho các trẻ em thuộc địa bàn Quận Lê Chân, thành phố Hải Phòng.</p>
+                            </span>
+                        </div> 
+                </div>
+            </div>
+            <?php include ('newdocuments.php'); ?>
+        </section>
+    </content>
+</div>
 </html>
 
