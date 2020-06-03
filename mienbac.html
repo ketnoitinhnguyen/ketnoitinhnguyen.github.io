@@ -1,0 +1,269 @@
+﻿<?php
+
+session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">  <!--Add this-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!--Add this-->
+    <link rel="stylesheet" href="./css/style_bac.css" />   <!--Add this-->
+
+    <title>Kết nối tình nguyện</title>
+</head>
+
+<body>
+    <header style = "class="header">
+        <div class="header__sidebar">
+            <div class="logo"><h4>Kết nối tình nguyện</h4></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Hoạt động tình nguyện</a>
+                        <ul class="cap_2">
+                            <li><a href="#">Miền Bắc</a></li>
+                            <li><a href="./mientrung.html">Miền Trung</a></li>
+                            <li><a href="./miennam.html">Miền Nam</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Địa phương khó khăn</a>
+                    </li>
+                    <li>
+                        <a href="#">Trở thành tình nguyện viên</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="header__text-box">
+                <h3 class="heading-primary">
+                    <span class="heading-primary--main">
+                        <h2>khu vực miền bắc</h2>
+                    </span>
+                    <span class="heading-primary--sub">
+                        <h5>
+                            Các chương trình tình nguyện ở miền Bắc được tổ chức phần lớn tại Hà Nội,
+                            nơi có số lượng sinh viên đông đảo và các tỉnh vùng cao lân cận như
+                            Lạng Sơn, Thái Nguyên, Sơn La, …
+                        </h5>
+                    </span>
+                </h3>
+            </div>
+</header>
+    <section class = "section">
+
+    </section>
+
+</body>
+
+
+<content class="content">
+    <section class="news-cards">
+        <div class="row">
+            <div class="column">
+                <div class="custom-select" style="width:400px;">
+                    <select>
+                        <option value="0">Chọn tỉnh/thành:</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">Hải Phòng</option>
+                        <option value="3">Hòa Bình</option>
+                        <option value="4">Sơn La</option>
+                        <option value="5">Điện Biên</option>
+                        <option value="6">Lai Châu</option>
+                        <option value="7">Lào Cai</option>
+                        <option value="8">Yên Bái</option>
+                        <option value="9">Hà Giang</option>
+                        <option value="10">Cao Bằng</option>
+                        <option value="11">Bắc Kạn</option>
+                        <option value="12">Lạng Sơn</option>
+                        <option value="13">Tuyên Quang</option>
+                        <option value="14">Thái Nguyên</option>
+                        <option value="15">Phú Thọ</option>
+                        <option value="16">Bắc Giang</option>
+                        <option value="17">Quảng Ninh</option>
+                        <option value="18">Bắc Ninh</option>
+                        <option value="19">Hà Nam</option>
+                        <option value="20">Hải Dương</option>
+                        <option value="21">Tuyên Quang</option>
+                        <option value="22">Hưng Yên</option>
+                        <option value="23">Nam Định</option>
+                        <option value="24">Ninh Bình</option>
+                        <option value="25">Thái Bình</option>
+                        <option value="26">Vĩnh Phúc</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column">
+                <div class="custom-select" style="width:400px;">
+                    <select>
+                        <option value="0">Thời gian thực hiện:</option>
+                        <option value="1">Tháng 1</option>
+                        <option value="2">Tháng 2</option>
+                        <option value="3">Tháng 3</option>
+                        <option value="4">Tháng 4</option>
+                        <option value="5">Tháng 5</option>
+                        <option value="6">Tháng 6</option>
+                        <option value="7">Tháng 7</option>
+                        <option value="8">Tháng 8</option>
+                        <option value="9">Tháng 9</option>
+                        <option value="10">Tháng 10</option>
+                        <option value="11">Tháng 11</option>
+                        <option value="12">Tháng 12</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column">
+                <div class="custom-select" style="width:400px;">
+                    <select>
+                        <option value="0">Đơn vị tổ chức:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+            </div>
+          </div> 
+        <script src="./js/selecttag.js"></script>
+    </section>
+    <section class="news-cards">
+
+        <h1 class="title">Hoạt động đang diễn ra:</h1>
+    <div class = "border-new">
+        <div class="wrapper">
+        <div class="card">
+            <img class="resize" src="./img/hoanhanai.png" alt=""> 
+            <div class="tooltip"><a href="https://ketnoitinhnguyen.wordpress.com/2020/05/25/chuong-trinh-tinh-nguyen-hoa-nhan-ai/"><h4>Chương trình tình nguyện “Hoa Nhân Ái”</h2></a>
+                <span class="tooltiptext">
+                    <p>Địa điểm: thành phố Hà Nội</p>
+                    <p>Thời gian: 24/05 – 27/05</p>
+                    <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                    <p>Mục đích: quyên góp sách vở, trang thiết bị học tập cho 
+                        các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                </span>
+            </div> 
+        </div>
+        <div class="card">
+            <img class="resize" src="./img/vibandentruong.png" alt="" />
+                <div class="tooltip"><h4>Chương trình tình nguyện “Vì bạn đến trường”</h2>
+                    <span class="tooltiptext">
+                        <p>Địa điểm: Tp. Hà Nội</p>
+                        <p>Thời gian: 24/05 – 27/05 </p>
+                        <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                        <p>Mục đích: quyên góp sách vở, trang thiết bị học
+                             tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                    </span>
+                </div> 
+        </div>
+        <div class="card">
+            <img class="resize" src="./img/ngayhoibannho.png" alt="" />
+                <div class="tooltip"><h4>Chương trình tình nguyện “Ngày hội người bạn nhỏ”</h2>
+                    <span class="tooltiptext">
+                        <p>Địa điểm: Tp. Hải Phòng</p>
+                        <p>Thời gian: 01/06 – 15/06</p>
+                        <p>Đơn vị tổ chức: Đoàn khoa tàu thủy ĐH Hàng Hải</p>
+                        <p>Mục đích: xây dựng khu vui chơi cho các trẻ em thuộc địa bàn Quận Lê Chân, thành phố Hải Phòng.</p>
+                    </span>
+                </div> 
+        </div>
+        <div class="card">
+            <img class="resize" src="./img/toiyeutoquoctoi.png" alt="" />
+                <div class="tooltip"><h4>Hành trình “Tôi yêu Tổ quốc tôi”</h2>
+                    <span class="tooltiptext">
+                        <p>Địa điểm: tỉnh Hà Giang</p>
+                        <p>Thời gian: 24/05 – 27/05 </p>
+                        <p>Đơn vị tổ chức: tỉnh Đoàn Hà Giang</p>
+                        <p>Mục đích: tổ chức những hoạt động chia sẻ với đồng bào tại các địa bàn khó khăn, để hội viên, 
+                            thanh niên chia sẻ những câu chuyện đẹp của thanh niên Việt Nam.</p>
+                    </span>
+                </div> 
+        </div>
+        <div class="card">
+            <img class="resize" src="./img/chiasecungthayco.png" alt="" />
+                <div class="tooltip"><h4>Chương trình “Chia sẻ cùng thầy cô” </h2>
+                    <span class="tooltiptext">
+                        <p>Địa điểm: Tp. Hà Nội</p>
+                        <p>Thời gian: 24/05 – 27/05 </p>
+                        <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                        <p>Mục đích: quyên góp sách vở, trang thiết bị học
+                             tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                    </span>
+                </div> 
+        </div>
+        <div class="card">
+            <img class="resize" src="./img/haylamsachbien.png" alt="" />
+                <div class="tooltip"><h4>Chiến dịch “Hãy làm sạch biển” </h2>
+                    <span class="tooltiptext">
+                        <p>Địa điểm: Tp. Hà Nội</p>
+                        <p>Thời gian: 24/05 – 27/05 </p>
+                        <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                        <p>Mục đích: quyên góp sách vở, trang thiết bị học
+                             tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                    </span>
+                </div> 
+        </div>
+    </div>
+    </section>
+    <section class="news-cards">
+        <h1 class="title">Hoạt động sắp diễn ra:</h1>
+        <div class = "border-new">
+            <div class="wrapper">
+            <div class="card">
+                <img class="resize" src="./img/hoanhanai.png" alt=""> 
+                <div class="tooltip"><h4>Chương trình tình nguyện “Hoa Nhân Ái”</h2>
+                    <span class="tooltiptext">
+                        <p>Địa điểm: thành phố Hà Nội</p>
+                        <p>Thời gian: 24/05 – 27/05</p>
+                        <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                        <p>Mục đích: quyên góp sách vở, trang thiết bị học tập cho 
+                            các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                    </span>
+                </div> 
+            </div>
+            <div class="card">
+                <img class="resize" src="./img/vibandentruong.png" alt="" />
+                    <div class="tooltip"><h4>Chương trình tình nguyện “Vì bạn đến trường”</h2>
+                        <span class="tooltiptext">
+                            <p>Địa điểm: Tp. Hà Nội</p>
+                            <p>Thời gian: 24/05 – 27/05 </p>
+                            <p>Đơn vị tổ chức: HSV trường ĐH Ngoại thương</p>
+                            <p>Mục đích: quyên góp sách vở, trang thiết bị học
+                                 tập cho các học sinh vùng cao có hoàn cảnh khó khăn ở tỉnh Lạng Sơn.</p>
+                        </span>
+                    </div> 
+            </div>
+            <div class="card">
+                <img class="resize" src="./img/ngayhoibannho.png" alt="" />
+                    <div class="tooltip"><h4>Chương trình tình nguyện “Ngày hội người bạn nhỏ”</h2>
+                        <span class="tooltiptext">
+                            <p>Địa điểm: Tp. Hải Phòng</p>
+                            <p>Thời gian: 01/06 – 15/06</p>
+                            <p>Đơn vị tổ chức: Đoàn khoa tàu thủy ĐH Hàng Hải</p>
+                            <p>Mục đích: xây dựng khu vui chơi cho các trẻ em thuộc địa bàn Quận Lê Chân, thành phố Hải Phòng.</p>
+                        </span>
+                    </div> 
+            </div>
+        </div>
+        <?php include ('newdocuments.php'); ?>
+    </section>
+</content>
+</html>
+

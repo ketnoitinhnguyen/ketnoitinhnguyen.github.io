@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">  <!--Add this-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!--Add this-->
+    <link rel="stylesheet" href="./css/style_user_view.css" />   <!--Add this-->
+
+    <title>Hồ sơ thành viên</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__sidebar">
+            <div class="header__sidebar">
+                <div class="logo"><h4>Kết nối tình nguyện</h4></div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Hoạt động tình nguyện</a>
+                            <ul class="cap_2">
+                                <li><a href="./mienbac.html">Miền Bắc</a></li>
+                                <li><a href="./mientrung.html">Miền Trung</a></li>
+                                <li><a href="#">Miền Nam</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Địa phương khó khăn</a>
+                        </li>
+                        <li>
+                            <a href="#">Xin chào, Doanh</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="header__text-box">
+            <h3 class="heading-primary">
+                <span class="heading-primary--main">
+                    <h2>quản lý tài khoản</h2>
+                </span>
+                <span class="heading-primary--sub">
+                    <h5>
+                        Hệ thống quản lý/ tra cứu tài khoản thành viên ketnoitinhnguyen.
+                    </h5>
+                </span>
+                <span class="heading-primary--sub">
+
+                </span>
+            </h3>
+            <a href="./uploadfile.html" class="btn btn--white btn--animated">đăng tải bài viết</a>
+        </div> 
+    </header>
+
+
+    <div class="row">
+        <div class="column left" style="background-color:white;">
+            <h1 class='title'>Thông tin thành viên:</h1>
+            <section class='userbox'>
+                <section = 'section_ava'><img src='./avatar/defaultava.png' alt= 'Avatar' class='avatar'></section>
+                <p></p>
+                <section class = 'section_btn'><button id = 'myBtn' class = 'button_ava'>Đổi avatar </button></section>
+                <h4>Họ và tên:</h4>
+                <p style="color:blue; font-size:20px;">Bùi Cao Doanh</p>
+                <h4>Đơn vị hiện tại:</h4>
+                <p style="color:blue; font-size:20px;">ĐH Công nghệ thông tin - ĐHQG TP.HCM</p>
+                <h4>Email:</h4>
+                <p style="color:blue; font-size:20px;">19521366@gm.uit.edu.vn</p>
+                <h4>Số hoạt động đã chia sẻ:</h4>
+                <p style="color:blue; font-size:20px;">4</p>
+                <h4>Số hoạt động đã tham gia:</h4>
+                <p style="color:blue; font-size:20px;">3</p>
+                <script src = 'js/user.js'></script>
+            </section>
+        </div>
+        <div class="column middle" style="background-color:white;">
+            <h1 class='title'>Các bài đã chia sẻ </h1>
+            <div class="row">
+                <div class="column_2 left_2" style="background-color:white;">
+                    <p style="color:black; font-size:20px; padding-top:20px;"><b>Tên bài viết</b></p>
+                    <p style="color:blue; font-size:18px; padding-top:10px;">Xây giúp nhà bà con tại tỉnh Tiền Giang</p>
+                    <p style="color:blue; font-size:18px; padding-top:10px;">Mở đường tại xã Phú Thuận B, h.Hồng Ngự</p>
+                    <p style="color:blue; font-size:18px; padding-top:10px;">Lợp mái giúp nhà bà con tại tỉnh Long An </p>
+                    <p style="color:blue; font-size:18px; padding-top:10px;">Hỗ trợ dân quân địa phương xây cầu tại Sa Đéc </p>
+                </div>
+                <div class="column_2 right_2" style="background-color:white;">
+                    <p style="color:black; font-size:20px; padding-top:20px;"><b>Ngày đăng</b></p>
+                    <p style="color:rgb(0, 0, 0); font-size:18px; padding-top:10px;">28/05/2020</p>
+                    <p style="color:rgb(0, 0, 0); font-size:18px; padding-top:10px;">28/05/2020</p>
+                    <p style="color:rgb(0, 0, 0); font-size:18px; padding-top:10px;">28/05/2020</p>
+                    <p style="color:rgb(0, 0, 0); font-size:18px; padding-top:10px;">28/05/2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="column right" style="background-color:white;">
+            <h1 class='title'>Hoạt động tình nguyện đã tham gia</h1>
+            <div class="column_2 left_3" style="background-color:white;">
+                <p style="color:black; font-size:20px; padding-top:20px;"><b>Tên hoạt động</b></p>
+                <p style="color:blue; font-size:18px; padding-top:10px;">Chương trình hoa nhân ái</p>
+                <p style="color:blue; font-size:18px; padding-top:10px;">Chương trình “Vì bạn đến trường”</p>
+                <p style="color:blue; font-size:18px; padding-top:10px;">Chương trình “Ngày hội người bạn nhỏ”</p>
+            </div>
+            <div class="column_2 right_3" style="background-color:white;">
+                <p style="color:black; font-size:20px; padding-top:20px;"><b>Trạng thái</b></p>
+                <p style="color:green; font-size:18px; padding-top:10px;">Hoàn thành</p>
+                <p style="color:red; font-size:18px; padding-top:10px;">Chưa diễn ra</p>
+                <p style="color:rgb(0, 0, 0); font-size:18px; padding-top:10px;">Quá hạn</p>
+            </div>
+        </div>
+      </div>
+</body>
+
+<footer class = "footer">
+        <div class="footer-column--left">
+            <p>
+                <p style="color:white; font-size:18px; padding-top:10px;">© Kết nối tình nguyện</p>
+            </p>
+        </div>  
+</footer>
+
+
+</html>
+
