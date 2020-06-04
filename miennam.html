@@ -42,7 +42,7 @@ session_start();
                         <a href="#" button id = "myBtn" class="main">Đăng ký</a>
                     </li>
                     <li>
-                        <a href="#" button id = "#" class="main">Đăng nhập</a>
+                        <a href="#" button id = "myBtn2" class="main">Đăng nhập</a>
                     </li>
                 </ul>
             </nav>
@@ -61,7 +61,7 @@ session_start();
                 </h3>
             </div>
 </header>
-<script src="js/openForm.js"></script>
+
     <div id='myModal' class='modal'>
         <!-- Modal content -->
         <div class='container'>
@@ -160,17 +160,30 @@ session_start();
     </div>
 
     <div id='myModal2' class='modal'>
-
         <!-- Modal content -->
-        <div class='modal-content'>
-            <div class="container2">
-                <div class="title">
-                    <strong>ĐĂNG NHẬP</strong>
-                  </div>
+        <div class="container2">
+            <span class='off'>+</span>
+            <div class="title">
+            <strong>ĐĂNG NHẬP</strong>
             </div>
+            <div class="form">
+            <div class="input">
+                <label for="">Email</label>
+                <input type="email" placeholder="Email" class="box" />
+            </div>
+            <div class="input">
+                <label for="">Mật khẩu</label>
+                <input type="email" placeholder="Password" class="box" />
+            </div>
+            <div class="input">
+                <input type="submit" value="ĐĂNG NHẬP" class="button" />
+            </div>
+            </div>
+        </div>
     </div>
 
 <script src='js/popup.js'></script>
+<script src="js/openForm.js"></script>                                 
 
 
 
