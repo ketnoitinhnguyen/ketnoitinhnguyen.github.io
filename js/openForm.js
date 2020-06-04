@@ -1,5 +1,5 @@
 
-document.getElementById('sign').addEventListener("click", function () {
+document.getElementById('myBtn').addEventListener("click", function () {
     document.querySelector('.container').style.display = "block";
 });
 document.querySelector('.close').addEventListener('click', function () {
