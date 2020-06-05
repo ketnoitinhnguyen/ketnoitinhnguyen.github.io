@@ -11,5 +11,7 @@ Các mục còn cần hoàn thành:
   + mục thông tin user
   + mục các hoạt động đã đăng ký (hiện trạng chưa hoàn thành / đã hoàn thành)
   + mục các hoạt động đã chia sẻ
-- Web đăng bài chia sẻ cho thành viên (1/6/2020)
-- Web đăng bài chia sẻ cho người tổ chức (1/6/2020)
+- Web đăng bài chia sẻ cho thành viên --> sử dụng của wordpress
+- Web đăng bài chia sẻ cho người tổ chức --> sử dụng của wordpress
+- Web địa phương khó khăn: [demo](https://ketnoitinhnguyen.github.io/share.html)
+DONE !!!! 
