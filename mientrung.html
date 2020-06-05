@@ -5,7 +5,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +14,8 @@ session_start();
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!--Add this-->
     <link rel="stylesheet" href="./css/style_trung.css" />   <!--Add this-->
+    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="./css/loginform.css">
     <title>Kết nối tình nguyện</title>
 </head>
 
@@ -53,17 +54,140 @@ session_start();
                         <h2>khu vực miền trung</h2>
                     </span>
                     <span class="heading-primary--sub">
-                        <h5>
-                            Thành phố Đà Nẵng và thành phố Huế nổi bật là 2 địa phương có hoạt động tình nguyện diễn ra sôi nổi nhất, bên cạnh đó cũng có rất nhiều chương trình diễn ra ở Quảng Nam, Quảng Trị,.. để giúp đỡ cho các địa phương kho khăn nơi đây 
-                        </h5>
+                         <p id="para">
+                            Thành phố Đà Nẵng và thành phố Huế nổi bật là 2 địa phương có hoạt động tình nguyện diễn ra sôi nổi nhất để giúp đỡ cho các địa phương khó khăn nơi đây 
+                         </p>
                     </span>
                 </h3>
             </div>
 </header>
-    <section class = "section">
+   <div id='myModal' class='modal'>
+        <!-- Modal content -->
+        <div class='container'>
+            <span class='close'>+</span>
+            <div class="title">
+                <strong> ĐĂNG KÝ TÌNH NGUYỆN VIÊN</strong>
+            </div>
+            <div class="form">
+                <div class="input">
+                    <label for="">Họ và tên</label>
+                    <input type="text" placeholder="Họ và tên" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Giới tính</label>
+                    <select name="" id="" class="select">
+                    <option value="Option">Chọn</option>
+                    <option value="Male">Nam</option>
+                    <option value="Female">Nữ</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="">Năm sinh</label>
+                    <input type="text" placeholder="Năm sinh" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Trường đang học</label>
+                    <input type="text" placeholder="Tên trường" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Mã số sinh viên</label>
+                    <input type="text" placeholder="Mã số sinh viên" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Số điện thoại</label>
+                    <input type="text" placeholder="Số điện thoại" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Địa chỉ</label>
+                    <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Địa chỉ"
+                    class="box"
+                    ></textarea>
+                </div>
+                <div class="input">
+            <label for="">Khu vực đăng ký</label>
+            <select name="" id="" class="select">
+            <option value="Option">Chọn</option>
+            <option value="North">Miền Bắc</option>
+            <option value="Central">Miền Trung</option>
+            <option value="South">Miền Nam</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="">Chương trình đăng ký</label>
+            <select name="" id="" class="select">
+            <option value="Option">Chọn</option>
+            <option value="1">Chia sẻ cùng thầy cô</option>
+            <option value="2">Tôi yêu Tổ quốc tôi</option>
+            <option value="3">Vì bạn đến trường</option>
+            <option value="4">Ngày hội người bạn nhỏ</option>
+            <option value="5">Hoa nhân ái</option>
+            <option value="6">Ngày hội người bạn nhỏ</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="">Email đăng ký</label>
+            <input type="email" placeholder="Email" class="box" />
+        </div>
+        <div class="input">
+            <label for="">Mật khẩu</label>
+            <input
+            type="password"
+            placeholder="Password"
+            class="box"
+            class="pass"
+            />
+        </div>
+        <div class="input">
+            <label for="">Nhập lại mật khẩu</label>
+            <input
+            type="password"
+            placeholder="Password"
+            class="box"
+            class="pass"
+            />
+        </div>
+        <div class="input">
+            <input type="submit" value="ĐĂNG KÝ" class="button" />
+        </div>
+            </div>
+        </div>
+    </div>
 
-    </section>
+    <div id='myModal2' class='modal'>
+        <!-- Modal content -->
+        <div class="container2">
+            <span class='off'>+</span>
+            <div class="title">
+            <strong>ĐĂNG NHẬP</strong>
+            </div>
+            <div class="form">
+            <div class="input">
+                <label for="">Email</label>
+                <input type="email" placeholder="Email" class="box" />
+            </div>
+            <div class="input">
+                <label for="">Mật khẩu</label>
+                <input type="password" placeholder="Password" class="box" />
+            </div>
+            <div class="input">
+                <input type="submit" value="ĐĂNG NHẬP" class="button" />
+            </div>
+            </div>
+        </div>
+    </div>
 
+<script src='js/popup.js'></script>
+<script src="js/openForm.js"></script>                                 
+
+
+
+  
+  </div>
 </body>
 
 
