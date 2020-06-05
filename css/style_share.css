@@ -200,7 +200,7 @@ animation-fill-mode: backwards; }
 
 
 header {
-background-image: linear-gradient(to right bottom, rgba(5, 158, 252, 0.3), rgba(0, 62, 255, 0.3)), url("https://alvesdemo.files.wordpress.com/2019/08/aaron-burden-1zr3wnstnvy-unsplash.jpg");;
+background-image: linear-gradient(to right bottom, rgba(5, 158, 252, 0.3), rgba(0, 62, 255, 0.3)), url("https://alvesdemo.files.wordpress.com/2019/08/jenn-evelyn-ann-uydoe_ayjqs-unsplash.jpg");;
 background-size: cover;
 background-position: top;
 position: relative;
@@ -848,40 +848,15 @@ a {
   cursor: pointer;
 }
 
+.row {
+    display: flex;
+  }
+
 .column {
-  float: left;
-  padding-left:60px;
-}
-
-.left{
-  width: 23%;
-}
-
-.right{
-  width: 35%;
-}
-
-.middle {
-  width: 38%;
-}
-
-.column_2 {
-  float:left;
-}
-.left_2{
-  width: 75%;
-}
-.right_2{
-  padding-left: 25px;
-  width: 25%;
-}
-
-.left_3{
-  width: 70%;
-}
-.right_3{
-  padding-left: 25.5px;
-  width: 30%;
+flex: 50%;
+padding: 5px;
+padding-left:70px;
+padding-bottom:30px;
 }
 
 .card{
@@ -890,7 +865,6 @@ a {
     box-shadow: 1px 1px 3px #888;
     border-top: 10px solid green;
     min-height: 250px;
-    padding-: 10px;
     margin: 10px;
     }
     
@@ -920,3 +894,69 @@ a {
       display: flex;
     flex-wrap: wrap;
     }
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    border: 1px solid #000000;
+    border-radius: 4px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: white;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,
+  .select-selected {
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    border-style: solid;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-style: solid;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
