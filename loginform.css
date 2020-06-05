@@ -19,6 +19,7 @@
   max-width: 500px;
   width: 100%;
   margin: auto;
+  margin-top: 100px;
   margin-bottom: 20px;
   padding-bottom: 0;
   padding: 20px;
@@ -89,15 +90,22 @@
   font-size: 18px;
 }
 
+/* The close button login */
 .container2 .off {
+  color: #aaaaaa;
   cursor: pointer;
   position: absolute;
+  float: right;
   top: 0;
   right: 10px;
   transform: rotate(45deg);
   font-size: 45px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
-.container2 .off:hover {
-  color: #6666666;
+.off:hover,
+.off:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
