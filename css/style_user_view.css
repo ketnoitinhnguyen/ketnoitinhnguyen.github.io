@@ -284,79 +284,6 @@ header {
   float: left;
 }
 
-
-.footer-name {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-mail {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-fb {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-right--heading {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-right--content {
-  color: #fff;
-  font-size: 16px;
-  font-family: sans-serif;
-  word-wrap: break-word;
-}
-
-.footer-name:before {
-  content: "";
-  background: url("../icon/name.png") no-repeat;
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin: 0 6px 0 0;
-}
-.footer-mail:before {
-  content: "";
-  background: url("../icon/email.png") no-repeat;
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin: 0 6px 0 0;
-}
-.footer-fb:before {
-  content: "";
-  background: url("../icon/fb.png") no-repeat;
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin: 0 6px 0 0;
-}
-
-footer .bar-wrap {
-  font-size: 12px;
-  margin: 0 auto;
-  max-width: 1200px;
-  position: relative;
-  width: 95%;
-}
-
 .footer-column--left {
   float: left;
   width: 50%;
@@ -852,46 +779,6 @@ a {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 50px;
-  border: 1px solid #888;
-  width: 70vh;
-  height: 35vh;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .column {
