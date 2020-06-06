@@ -293,115 +293,9 @@ header {
   float: left;
 }
 
-.footer {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(142, 158, 252, 0.3),
-      rgba(28, 62, 255, 0.3)
-    ),
-    url("../img/footer.png");
-  background-size: cover;
-  background-position: top;
-  height: 220px;
-}
-
-.footer-name {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-mail {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-fb {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-right--heading {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
-
-.footer-right--content {
-  color: #fff;
-  font-size: 16px;
-  font-family: sans-serif;
-  word-wrap: break-word;
-}
-
-.footer-name:before {
-  content: "";
-  background: url("../icon/name.png") no-repeat;
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin: 0 6px 0 0;
-}
-.footer-mail:before {
-  content: "";
-  background: url("../icon/email.png") no-repeat;
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin: 0 6px 0 0;
-}
-.footer-fb:before {
-  content: "";
-  background: url("../icon/fb.png") no-repeat;
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin: 0 6px 0 0;
-}
-
-footer .bar-wrap {
-  font-size: 12px;
-  margin: 0 auto;
-  max-width: 1200px;
-  position: relative;
-  width: 95%;
-}
-
-.footer-column--left {
-  float: left;
-  width: 50%;
-  padding-top: 50px;
-  padding-left: 160px;
-}
-
-.footer-column--right {
-  float: right;
-  width: 50%;
-  padding-top: 20px;
-  padding-right: 260px;
-}
-
-/* Clear floats after the columns */
-.footer-content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 * {
   box-sizing: border-box;
 }
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -1051,4 +945,34 @@ tr:hover {
   border: 1px solid #888;
   width: 80vh;
   height: 100vh;
+}
+
+/* Footer of north */
+.footer {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(142, 158, 252, 0.3),
+      rgba(28, 62, 255, 0.3)
+    ),
+    url("../img/footer2.png");
+  background-size: cover;
+  background-position: top;
+  height: 55px;
+  margin-top: auto;
+  top: 15px;
+}
+
+.footer-column--left {
+  float: right;
+  width: 100%;
+padding-top: 18px;
+  padding-left: 160px;
+  letter-spacing: 0px;
+}
+
+#copyright {
+  font-style: normal;
+  color: #000000;
+  font-size: 20px;
+  padding-top: 0;
 }
