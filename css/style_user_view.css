@@ -284,20 +284,6 @@ header {
   float: left;
 }
 
-.footer {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(142, 158, 252, 0.3),
-      rgba(28, 62, 255, 0.3)
-    ),
-    url("../img/footer.png");
-  background-size: cover;
-  clear: both;
-  position: relative;
-  height: 55px;
-  margin-top: auto;
-  top: 20px;
-}
 
 .footer-name {
   color: #fff;
