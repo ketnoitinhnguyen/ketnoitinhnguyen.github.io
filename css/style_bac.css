@@ -954,7 +954,7 @@ tr:hover {
       rgba(142, 158, 252, 0.3),
       rgba(28, 62, 255, 0.3)
     ),
-    url("../img/footer2.png");
+    url("../img/footer.png");
   background-size: cover;
   background-position: top;
   height: 55px;
@@ -972,8 +972,8 @@ padding-top: 18px;
 
 #copyright {
   font-style: normal;
-  color: #000000;
-  font-size: 20px;
+  color: white;
+  font-size: 21px;
   padding-top: 0;
   font-family: sans-serif;
 }
