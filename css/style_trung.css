@@ -239,7 +239,7 @@ header {
       rgba(5, 158, 252, 0.3),
       rgba(0, 62, 255, 0.3)
     ),
-    url("https://alvesdemo.files.wordpress.com/2019/08/jenn-evelyn-ann-uydoe_ayjqs-unsplash.jpg");
+    url("https://ketnoitinhnguyen.files.wordpress.com/2020/05/andreea-popa-pknaorb1lvo-unsplash.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1065,4 +1065,34 @@ tr:hover {
   border: 1px solid #888;
   width: 80vh;
   height: 100vh;
+}
+/* Footer of central */
+.footer {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(142, 158, 252, 0.3),
+      rgba(28, 62, 255, 0.3)
+    ),
+    url("../img/footer.png");
+  background-size: cover;
+  background-position: top;
+  height: 55px;
+  margin-top: auto;
+  top: 15px;
+}
+
+.footer-column--left {
+  float: right;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 160px;
+  letter-spacing: 0px;
+}
+
+#copyright {
+  font-style: normal;
+  color: white;
+  font-size: 21px;
+  padding-top: 0;
+  font-family: sans-serif;
 }
