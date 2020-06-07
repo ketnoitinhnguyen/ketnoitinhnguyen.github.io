@@ -960,7 +960,7 @@ padding-bottom:30px;
   .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
   }
-/* Footer of north */
+/* Footer of share */
 .footer {
   background-image: linear-gradient(
       to right bottom,
@@ -971,9 +971,6 @@ padding-bottom:30px;
   background-size: cover;
   background-position: top;
   height: 55px;
-  margin-top: auto;
-  top: 15px;
-  margin-bottom: 0;
 }
 
 .footer-column--left {
@@ -988,6 +985,6 @@ padding-top: 16px;
   font-style: normal;
   color: white;
   font-size: 21px;
-  padding-top: 0;
   font-family: sans-serif;
+  margin: 0px;
 }
