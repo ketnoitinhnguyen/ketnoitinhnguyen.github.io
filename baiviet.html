@@ -1,0 +1,323 @@
+<?php
+
+session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">  <!--Add this-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!--Add this-->
+    <link rel="stylesheet" href="./css/style_baiviet.css" />   <!--Add this-->
+    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="./css/loginform.css"> 
+    <title>Kết nối tình nguyện</title>
+</head>
+
+<body>
+    <header style = "class="header">
+        <div class="header__sidebar">
+            <div class="logo" class="main"><h4>Kết nối tình nguyện</h4></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="main">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="main">Hoạt động tình nguyện</a>
+                        <ul class="cap_2">
+                            <li><a href="./mienbac.html">Miền Bắc</a></li>
+                            <li><a href="./mientrung.html">Miền Trung</a></li>
+                            <li><a href="#">Miền Nam</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="main">Địa phương khó khăn</a>
+                    </li>
+                    <li>
+                        <a href="#" button id = "myBtn" class="main">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="#" button id = "myBtn2" class="main">Đăng nhập</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="header__text-box">
+                <h3 class="heading-primary">
+                    <span class="heading-primary--main">
+                        <h2>khu vực miền nam</h2>
+                    </span>
+                    <span class="heading-primary--sub">
+                        <p id="para">
+                            Thành phố Hồ Chí Minh với mật độ dân số cao, 
+                            lực lượng Đoàn viên thanh niên đông đảo là lợi thế để xây dựng các hoạt động tình nguyện
+                        </p>
+                    </span>
+                </h3>
+            </div>
+</header>
+
+    <div id='myModal' class='modal'>
+        <!-- Modal content -->
+        <div class='container'>
+            <span class='close'>+</span>
+            <div class="title">
+                <strong> ĐĂNG KÝ TÌNH NGUYỆN VIÊN</strong>
+            </div>
+            <div class="form">
+                <div class="input">
+                    <label for="">Họ và tên</label>
+                    <input type="text" placeholder="Họ và tên" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Giới tính</label>
+                    <select name="" id="" class="select">
+                    <option value="Option">Chọn</option>
+                    <option value="Male">Nam</option>
+                    <option value="Female">Nữ</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="">Năm sinh</label>
+                    <input type="text" placeholder="Năm sinh" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Trường đang học</label>
+                    <input type="text" placeholder="Tên trường" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Mã số sinh viên</label>
+                    <input type="text" placeholder="Mã số sinh viên" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Số điện thoại</label>
+                    <input type="text" placeholder="Số điện thoại" class="box" />
+                </div>
+                <div class="input">
+                    <label for="">Địa chỉ</label>
+                    <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Địa chỉ"
+                    class="box"
+                    ></textarea>
+                </div>
+                <div class="input">
+            <label for="">Khu vực đăng ký</label>
+            <select name="" id="" class="select">
+            <option value="Option">Chọn</option>
+            <option value="North">Miền Bắc</option>
+            <option value="Central">Miền Trung</option>
+            <option value="South">Miền Nam</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="">Chương trình đăng ký</label>
+            <select name="" id="" class="select">
+            <option value="Option">Chọn</option>
+            <option value="1">Chia sẻ cùng thầy cô</option>
+            <option value="2">Tôi yêu Tổ quốc tôi</option>
+            <option value="3">Vì bạn đến trường</option>
+            <option value="4">Ngày hội người bạn nhỏ</option>
+            <option value="5">Hoa nhân ái</option>
+            <option value="6">Ngày hội người bạn nhỏ</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="">Email đăng ký</label>
+            <input type="email" placeholder="Email" class="box" />
+        </div>
+        <div class="input">
+            <label for="">Mật khẩu</label>
+            <input
+            type="password"
+            placeholder="Password"
+            class="box"
+            class="pass"
+            />
+        </div>
+        <div class="input">
+            <label for="">Nhập lại mật khẩu</label>
+            <input
+            type="password"
+            placeholder="Password"
+            class="box"
+            class="pass"
+            />
+        </div>
+        <div class="input">
+            <input type="submit" value="ĐĂNG KÝ" class="button" />
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div id='myModal2' class='modal'>
+    <!-- Modal content -->
+    <div class="container2">
+        <span class='off'>+</span>
+        <div class="title">
+        <strong>ĐĂNG NHẬP</strong>
+        </div>
+        <div class="form">
+        <div class="input">
+            <label for="">Email</label>
+            <input type="email" placeholder="Email" class="box" />
+        </div>
+        <div class="input">
+            <label for="">Mật khẩu</label>
+            <input type="email" placeholder="Password" class="box" />
+        </div>
+        <div class="input">
+            <a href="./user.html" class="button" >ĐĂNG NHẬP</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script src='js/popup.js'></script>
+<script src="js/openForm.js"></script>
+
+
+
+
+</body>
+<article class="post">
+    <h1 style ="color: black; font-size:40px;">Chiến dịch tình nguyện "Mộc"</h1>
+    <ol class="post-footnotes"></ol>
+    <img src="https://ketnoitinhnguyen.github.io/img/Chi%E1%BA%BFn%20d%E1%BB%8Bch%20t%C3%ACnh%20nguy%E1%BB%87n%20M%E1%BB%99c.jpg" alt="" style ="border-radius: 8px;">
+    <h1 style ="color: black; font-size:28px;">1. Mục đích:</h1>
+    <p>- Nhằm đáp ứng nhu cầu hoạt động xã hội, cống hiến sức trẻ vì cộng đồng, tạo điều kiện để sinh viên góp yêu thương về các địa phương còn khó khăn. Đồng thời tạo môi trường, điều kiện đáp ứng chuẩn đầu ra về ngày công tác xã hội của sinh viên.</p>
+    <p>- Tạo ra môi trường lành mạnh cho sinh viên giao lưu, học hỏi, thắt chặt tình đoàn kết giữa sinh viên trường Đại học Kinh tế - Luật và trường Đại học Công nghệ Thông tin.</p>
+    <p>- Phát huy tinh thần xung kích, tình nguyện, cống hiến của sinh viên trong việc tham gia các hoạt động tình nguyện, phát huy sức trẻ góp phần xây dựng một cuộc sống có chất lượng sống tốt, văn minh, hiện đại, nghĩa tình.</p>
+    <h1 style ="color: black; font-size:28px;">2. Yêu cầu:</h1>
+    <p>- Có những đóng góp thiết thực có giá trị cho địa phương.</p>
+    <p>- Chiến dịch có nội dung mới thu hút sự quan tâm, tham gia đông đảo của sinh viên trên toàn thành phố.</p>
+    <p>- Chiến dịch diễn ra an toàn, công tác tổ chức thiết thực, hiệu quả, tiết kiệm, phối hợp chặt chẽ với địa phương.</p>
+    <h1 style ="color: black; font-size:28px;">3. Thời gian/địa điểm:</h1>
+    <p><h7 style="font-weight:bold;">Thời gian:</h7> Từ ngày 17/10/2019 – 01/12/2019. </p>
+    <p><h7 style="font-weight:bold;">Địa điểm:</h7> Xã Huyền Hội, huyện Càng Long, tỉnh Trà Vinh. </p>
+    <p><h7 style="font-weight:bold;">Đối tượng tham gia:</h7> Sinh viên đang theo học tại các trường Đại học, Cao đẳng trên toàn Thành phố Hồ Chí Minh. </p>
+    <p><h7 style="font-weight:bold;">Số lượng:</h7> 180 sinh viên. </p>
+    <h1 style ="color: black; font-size:28px;">4. Nội dung:</h1>
+    <p><h7 style="font-weight:bold;">- Hoạt động “Góp sức tuổi trẻ”</h7></p>
+    <p>+ Tu sửa đường sá: Tiến hành sửa chữa một số tuyến đường xuống cấp nghiêm trọng tại địa phương.</p>
+    <p>+ Tu sửa công trình: Sơn cổng và quét vôi hàng rào trường học. </p>
+    <p>+ Thắp sáng đường quê: Tiến hành lắp đặt các trụ đèn nhằm thắp sáng trên tuyến đường xác định tại địa phương. Dự kiến đoạn đường thắp sáng khoảng 01 km.</p>
+    <p>+ Phát quang: Tiến hành dọn dẹp cỏ hai bên đường, thu gom và xử lí rác thải trên các tuyến đường.</p>
+    <p><h7 style="font-weight:bold;">- Hoạt động “Trao yêu thương”:</h7></p>
+    <p>+ San sẻ nghĩa tình: Thăm hỏi, chia sẻ, tặng quà cho những hộ nghèo, gia đình chính sách, mẹ Việt Nam Anh hùng và người già neo đơn có hoàn cảnh khó khăn.</p>
+    <p>+ Áo ấm trao tay: Thu gom áo quần cũ còn khả năng sử dụng được trao lại cho các gia đình có hoàn cảnh khó khăn.</p>
+    <p>+ Ươm mầm tuổi trẻ: Trao học bổng cho học sinh nghèo vượt khó, có thành tích học tập tốt. Bên cạnh đó, tặng xe đạp cũ đã được tân trang cho các em học sinh có hoàn cảnh đặc biệt khó khăn mà chưa có phương tiện đi lại ở địa phương.</p>
+    <p>+ Bữa cơm yêu thương: Các chiến sĩ MỘC đến các hộ gia đình người già neo đơn để cùng chia sẻ, dọn dẹp, nấu ăn và tặng quà.</p>
+    <p>+ Công trình MỘC: Đây là nét đặc trưng của MỘC nhằm trao tặng những vật dụng có ý nghĩa như: ngựa gỗ, chậu cây và thùng rác làm từ bánh xe và ván gỗ.</p>
+    <p>+ Đền ơn đáp nghĩa: Đại diện mỗi nhóm cùng Ban Chỉ huy và địa phương sẽ tiến hành dâng hương, thắp nến để tri ân và tưởng niệm các Anh hùng liệt sĩ.</p>
+    <p><h7 style="font-weight:bold;">- Hoạt động “Kết nối MỘC”:</h7></p>
+    <p>+ Giao lưu văn nghệ: Tổ chức giao lưu văn nghệ giữa các chiến sĩ trường Đại học Kinh tế - Luật và trường Đại học Công nghệ Thông tin cùng với địa phương. </p>
+    <p>+ Dấu ấn MỘC: Trồng một cây xanh bóng mát và đặt trong khuôn viên trường hoặc</p>
+    trước cổng trường học nơi làm công trình MỘC.
+    <p>+ Ngày hội cho em: Giao lưu, sinh hoạt với trẻ em trên địa phương, tổ chức trò chơi dân gian và trao quà.</p>
+
+    <ol class="post-footnotes">
+      <li id="note:1">Tải về bản PDF kế hoạch của hoạt động<a href="#"> tại đây</a>.</li>
+    </ol>
+  </article>
+
+<div class="comments-app" ng-app="commentsApp" ng-controller="CommentsController as cmntCtrl">
+    <h1>Phản hồi của tình nguyện viên</h1>
+    
+    <!-- From -->
+    <div class="comment-form">
+
+      <div class="comment">
+        <!-- Comment Avatar -->
+        <div class="comment-avatar">
+          <img src="./avauser/3.png">
+        </div>
+  
+        <!-- Comment Box -->
+        
+        <div class="comment-box">
+          <div class="comment-text" style ="font-family: Arial, Helvetica, sans-serif; font-size:17px">Hoạt động rất thú vị! Mang lại cho mình thêm nhiều kỹ năng rất cần thiết. Anh chị ban tổ chức rất vui vẻ</div>
+          <div class="comment-footer">
+            <div class="comment-info">
+              <span class="comment-author">
+                <a href="mailto:sexar@pagelab.io">Đoàn Chấn Hưng</a>
+              </span>
+              <span class="comment-date">28/05/2020 22:32:04 PM</span>
+            </div>
+  
+            <div class="comment-actions">
+              <a href="#">Trả lời</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Comment - Dummy -->
+      <div class="comment">
+        <!-- Comment Avatar -->
+        <div class="comment-avatar">
+          <img src="./avauser/1.png">
+        </div>
+  
+        <!-- Comment Box -->
+        
+        <div class="comment-box">
+          <div class="comment-text" style ="font-family: Arial, Helvetica, sans-serif; font-size:17px">Các bạn tình nguyện viên tuy không quen nhau nhưng rất đoàn kết ^^!</div>
+          <div class="comment-footer">
+            <div class="comment-info">
+              <span class="comment-author">
+                <a href="mailto:sexar@pagelab.io">Trang Nhã</a>
+              </span>
+              <span class="comment-date">28/05/2020 17:34:02 PM</span>
+            </div>
+  
+            <div class="comment-actions">
+              <a href="#">Trả lời</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Comment - Dummy -->
+      <div class="comment">
+        <!-- Comment Avatar -->
+        <div class="comment-avatar">
+          <img src="./avauser/2.png">
+        </div>
+  
+        <!-- Comment Box -->
+        <div class="comment-box">
+          <div class="comment-text" style ="font-family: Arial, Helvetica, sans-serif; font-size:17px">Hoạt động tuy mệt mà vui! Hy vọng có thêm nhiều hoạt động giống như vậy :D.</div>
+          <div class="comment-footer">
+            <div class="comment-info">
+              <span class="comment-author">
+                <a href="mailto:ximme13@somedomain.io">Tuấn Tú</a>
+              </span>
+              <span class="comment-date">28/05/2020 8:30:57 PM</span>
+            </div>
+  
+            <div class="comment-actions">
+              <a href="#">Trả lời</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>
+
